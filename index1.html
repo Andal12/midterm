@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Homepage</title>
+
+  <head>
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: -20px 0 0 0;
+        color: white;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      a:hover {
+        color: #A99FA1;
+      }
+
+
+      li a::after {
+        content: "";
+        width: 0;
+        height: 3px;
+        background-color: aqua;
+        margin: auto;
+        display: block;
+      }
+
+      li a:hover::after {
+        width: 100%;
+        transition: widt 0.3s linear;
+      }
+
+
+
+
+      /*****************
+Header 
+******************/
+
+      header {
+        float: left;
+        background: #3f282d;
+        border-bottom: 2px solid #382428;
+        padding: 25px 0;
+        width: 100%;
+        font-family: 'Lato', sans-serif;
+      }
+
+      /* Logo */
+
+      .logo {
+        padding-top: 1%;
+        float: left;
+        text-align: left;
+        margin-left: 5%;
+        font-size: 30px;
+      }
+
+      /* Navigation */
+
+      nav {
+        padding-top: 1%;
+        float: right;
+        text-align: right;
+        margin-right: 2%;
+        font-size: 28px;
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding-top: 8px;
+      }
+
+      nav li {
+        display: inline-block;
+        padding: 0 8px;
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 2px;
+      }
+
+      nav a {
+        padding: 15px 10px;
+      }
+
+
+      /*****************
+Section 
+******************/
+
+      section {
+        background-image: url(https://i.ytimg.com/vi/uuX4LLMidtY/maxresdefault.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+
+        height: 100%;
+        text-align: center;
+      }
+
+      section h1 {
+        font-family: 'Vollkorn', serif;
+        font-size: 48px;
+
+      }
+
+      section p {
+        width: 500px;
+        margin: -28px auto 32px;
+        font-family: 'Muli', sans-serif;
+        font-size: 18px;
+        line-height: 1.35;
+      }
+
+
+      h1 img {
+        height: 250px;
+      }
+
+
+
+      .updown-animation {
+        animation: updown-animation 2s infinite alternate;
+      }
+
+      @keyframes updown-animation {
+        0% {
+          transform: translateY(0);
+        }
+
+        100% {
+
+          transform: translateY(20px);
+        }
+      }
+
+      @keyframes fadeIn {
+        0%{
+          opacity: 0%
+        }
+        100%{
+          opacity: 1;
+        }
+      }
+
+
+    body {
+      font-family: ink free;
+    }
+
+    p {
+      opacity: 0;
+      transition: opacity 1s;
+      padding: 10px;
+      margin: 10px;
+      
+    }
+
+    #p1 {
+      animation: fadeIn 6s forwards infinite 2s;
+      font-family: ink free;
+      font-size: 19px;
+
+
+    }
+
+    #p2 {
+      animation: fadeIn 6s forwards infinite 3s;
+      margin-bottom: 200px;
+      font-family: ink free;
+      font-size: 20px;
+
+
+    }
+
+    #p3 {
+      animation: fadeIn 6s forwards infinite 4s;
+      font-family: ink free;
+      font-size: 20px;
+
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      20% {
+        opacity: 1;
+      }
+      80% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+  </style>
+
+      
+    </style>
+
+  <body>
+    <header>
+      <a href="#" class="logo">
+        <em>Online</em><strong>Library</strong>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="children.html">Children Books</a></li>
+          <li><a href="adult.html">Adult Books</a></li>
+          <li><a href="adultsci.html">Scifi Books</a></li>
+          <li><a href="contact.html">Contacts</a>
+        
+        <li><a><button id="logoutButton" style="background: #3f282d; color: aliceblue;"  >Logout</button></a></li>
+
+
+     
+  
+ 
+  
+
+        </ul>
+      </nav>
+    </header>
+    <center>
+    <h1 style="float: left; font-size: 30px; margin-left: 15px;">WELCOME TO OUR LIBRARY!!<br>this library contains...</h1>
+      
+      
+  </center>
+    <section>
+
+      <div class="image-container">
+        <h1><img src="zwufl41g.png" alt="" class="updown-animation" style="margin-right: 380px;"></h1>
+      </div>
+      <br>
+      <br>
+
+      <p id="p2" style="float: left;">
+        Children fiction  is geared towards readers aged 12 to 18, although it has a broad readership. YA books often feature protagonists in the same age range, addressing themes relevant to adolescents while spanning various genres.
+      </p>
+
+      <p id="p3" style="float: right;">
+        Sci-fi, or science fiction, is a genre that explores speculative concepts often related to futuristic technology, space exploration, time travel, and scientific advancements. It can be written for any age group, blending imaginative elements with scientific or futuristic concepts.
+      </p>
+
+      <p id="p1" >
+      Adult fiction contains literature written for and marketed to Adult, encompassing a wide range of genres and themes. It caters to a mature audience and often explores complex topics.
+      </p>
+      
+    
+
+    </section>
+
+   
+
+  <script>
+    document.getElementById('logoutButton').addEventListener('click', function () {
+        // Redirect to another page (e.g., logout.html)
+        window.location.href = 'getstarted.html';
+    });
+
+</script>
+    
+  </body>
+
+</html>

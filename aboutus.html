@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        min-height: 100vh;
+        min-height: 100svh;
+        background: #1f2c3a;
+        font-family: "Nunito", sans-serif;
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    img {
+        border-radius: 50%;
+        width: clamp(100px, 40vw, 120px);
+        height: clamp(100px, 40vw, 120px);
+        object-fit: cover;
+        object-position: top;
+    }
+
+    .circle-top {
+        width: clamp(25rem, 30vw, 31.25rem);
+        position: absolute;
+        top: 3em;
+        left: -8em;
+        height: clamp(25rem, 30vw, 31.25rem);
+        background: hsla(211, 100%, 28%, 1);
+
+        background: radial-gradient(circle,
+                #00458f8f 0%,
+                #00458e00 60%,
+                #ffffff00 100%);
+
+        background: -moz-radial-gradient(circle,
+                #00458f8f 0%,
+                #00458e00 60%,
+                #ffffff00 100%);
+
+        background: -webkit-radial-radial-gradient(circle,
+                #00458f8f 0%,
+                #00458e00 60%,
+                #ffffff00 100%);
+
+        border-radius: 50%;
+    }
+
+    .circle-bottom {
+        width: clamp(25rem, 30vw, 31.25rem);
+        position: absolute;
+        bottom: -5em;
+        right: -8em;
+        height: clamp(25rem, 30vw, 31.25rem);
+        background: hsla(211, 100%, 28%, 1);
+
+        background: radial-gradient(circle,
+                #7591af8f 0%,
+                #00458e00 65%,
+                #ffffff00 100%);
+
+        background: -moz-radial-gradient(circle,
+                #678cb38f 0%,
+                #00458e00 65%,
+                #ffffff00 100%);
+
+        background: -webkit-radial-radial-gradient(circle,
+                #7290b18f 0%,
+                #00458e00 65%,
+                #ffffff00 100%);
+
+        border-radius: 50%;
+    }
+
+    header {
+        background: linear-gradient(to top, #1f2c3a 0%, #2f3c4742 100%),
+            url("https://th.bing.com/th/id/OIP.q-NHRwHKNer4a8B5i3LRyQHaD4?rs=1&pid=ImgDetMain") no-repeat 50% 50% / cover;
+        width: 100%;
+        min-height: 25em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+
+        .header-content {
+
+            width: min(37.5em, 90%);
+            margin-top: 5em;
+            position: relative;
+            z-index: 10;
+
+
+            span {
+                display: inline-block;
+                text-transform: uppercase;
+                letter-spacing: 0.063rem;
+                font-size: clamp(0.8rem, 0.7625rem + 0.1875vw, 0.95rem);
+
+            }
+
+            h1 {
+                font-size: clamp(2.5rem, 2.375rem + 0.625vw, 2rem);
+                font-weight: 700;
+
+            }
+        }
+    }
+
+    section {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 75em;
+        margin-inline: auto;
+        gap: 0.938rem;
+        transform: translatey(-3em);
+        position: relative;
+        z-index: 10;
+
+        .card {
+
+            width: 90%;
+            height: 16.875rem;
+            display: grid;
+            place-content: center;
+            place-items: center;
+            text-align: center;
+
+            &::before {
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 1rem;
+                z-index: -1;
+                border: 0.125rem solid transparent;
+                background: linear-gradient(45deg, #1e272e, #48627a) border-box;
+                -webkit-mask: linear-gradient(#fff 0 0) padding-box,
+                    linear-gradient(#fff 0 0);
+                -webkit-mask-composite: destination-out;
+                mask-composite: exclude;
+            }
+
+
+            h2 {
+                color: #fff;
+                letter-spacing: 0.05rem;
+                font-size: clamp(1rem, 0.9375rem + 0.3125vw, 1.25rem);
+                margin-top: 0.625em;
+                margin-bottom: 0.188em;
+            }
+
+            p {
+                color: #afafaf;
+                font-size: clamp(0.8rem, 0.7625rem + 0.1875vw, 0.95rem);
+            }
+
+            &-top {
+                flex-basis: 100%;
+                display: flex;
+
+                justify-content: center;
+                gap: 0.938rem;
+                flex-wrap: wrap;
+
+                .card {
+                    img {
+                        width: clamp(120px, 40vw, 150px);
+                        height: clamp(120px, 40vw, 150px);
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    #logoutButton {
+
+        border: none;
+        background-color: rgb(255, 71, 71);
+        color: #fff;
+        height: 50px; 
+        width: 150px;
+        border-radius: 20px;
+        margin-top: 30px;
+        cursor: pointer;
+
+    }
+
+    #logoutButton {
+        background: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+        color: #fff;
+        padding: 16px !important;
+    }
+
+    #logoutButton:hover {
+        background: linear-gradient(144deg, #1e1e1e, 20%, #1e1e1e 50%, #1e1e1e);
+        color: rgb(255, 255, 255);
+        padding: 16px !important;
+        cursor: pointer;
+        transition: all 0.4s ease;
+    }
+</style>
+
+<body>
+
+
+
+    <div class="circle-top"></div>
+    <div class="circle-bottom"></div>
+    <header>
+        <div class="header-content">
+            <span>ONLINE LIBRARY CREATOR</span>
+            <h1>Meet our Group<br><br>BSIE-ICT 2A</h1>
+        </div>
+    </header>
+
+    <section>
+        <div class="card-top">
+            <div class="card">
+                <img src="morales.jpg" alt="Cedrick Kelly">
+                <h2>Cedrick Kelly Morales</h2>
+                <p>Taga Luto ng Pancit Canton</p>
+            </div>
+
+            <div class="card">
+                <img src="tristan.jpg" alt="Tristan Andal">
+                <h2>Tristan Andal</h2>
+                <p>Taga pag pakulo ng tubig</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="lopez.jpg" alt="John Cedrick Lopez">
+            <h2>John Ceddrick Lopez</h2>
+            <p>taga hugas ng pinagkainan</p>
+        </div>
+
+        <div class="card">
+            <img src="nanet.jpg" alt="Nanet Estole">
+            <h2>Nanet Estole</h2>
+            <p>Financer</p>
+        </div>
+
+    
+
+            <button id="logoutButton" >Back to Homepage</button>
+    
+      
+    </section>
+
+    
+    <script>
+        document.getElementById('logoutButton').addEventListener('click', function () {
+            // Redirect to another page (e.g., logout.html)
+            window.location.href = 'index1.html';
+        });
+
+    </script>
+
+
+</body>
+
+</html>

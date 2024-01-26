@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: rgb(2, 0, 36);
+      background: linear-gradient(90deg, rgba(2, 0, 36, 1) 12%, rgba(103, 9, 121, 1) 52%, rgba(0, 58, 70, 1) 100%);
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .contact-card {
+
+
+      font-family: Ink free;
+      color: #fff;
+
+      background: rgba(255, 255, 255, .1);
+      box-shadow: 0px 0px 20px 5px gray;
+      width: 500px;
+      border-radius: 20px;
+      border: 2px solid(233, 38, 217, 0.5);
+      border-right: 2px solid rgba(255, 255, 255, .2);
+      border-bottom: 2px solid rgba(255, 255, 255, .2);
+      backdrop-filter: blur(20px);
+
+
+
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 10px;
+
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+      width: 250px;
+      text-align: center;
+      animation: wave 2s infinite;
+    }
+
+    @keyframes wave {
+
+      0%,
+      100% {
+        transform: rotate(0deg);
+      }
+
+      50% {
+        transform: rotate(5deg);
+      }
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    p {
+      color: #666;
+      margin: 10px 0;
+    }
+
+
+
+    #logoutButton {
+      background: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+      color: #fff;
+      padding: 16px !important;
+    }
+
+    #logoutButton:hover {
+      background: linear-gradient(144deg, #1e1e1e, 20%, #1e1e1e 50%, #1e1e1e);
+      color: rgb(255, 255, 255);
+      padding: 16px !important;
+      cursor: pointer;
+      transition: all 0.4s ease;
+    }
+  </style>
+  <title>Contact List</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="contact-card">
+      <h2 style="color: #fffefe;">Cedrick Kelly Morales</h2>
+      <p style="color: #fffcfc;">Phone: 09658723574</p>
+      <p style="color: #fff8f8;">Email: quicksad20@gmail.com</p>
+    </div>
+
+    <div class="contact-card">
+      <h2 style="color: #ffffff;">Tristan Andal</h2>
+      <p style="color: #fffdfd;">Phone: 09854027631</p>
+      <p style="color: #fffdfd">Email: ronneltristan.andal@tup.edu.ph</p>
+    </div>
+
+    <div class="contact-card">
+      <h2 style="color: #fffcfc;">John Cedrick Lopez</h2>
+      <p style="color: #fffdfd;">Phone: 09954447828</p>
+      <p style="color: #fff4f4;">Email: johncedrick.lopez@tup.edu.ph</p>
+    </div>
+
+    <div class="contact-card">
+      <h2 style="color: #fffcfc;">Nanet Estole</h2>
+      <p style="color: #fff8f8;">Phone: 456-789-0123</p>
+      <p style="color: #fff7f7;">Email: nanet.estole@tup.edu.ph/p>
+    </div>
+
+    <center>
+
+      <button id="logoutButton" style="margin-left: 550px; margin-top: 50px;">Back to Homepage</button>
+
+    </center>
+  </div>
+
+
+
+
+  <script>
+    document.getElementById('logoutButton').addEventListener('click', function () {
+      // Redirect to another page (e.g., logout.html)
+      window.location.href = 'index1.html';
+    });
+
+  </script>
+
+
+</body>
+
+</html>
